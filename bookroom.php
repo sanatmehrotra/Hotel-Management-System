@@ -135,13 +135,13 @@
 					<tr>
 						<td style="text-align: left;">Enter check-in date:</td>
 						<td style="text-align: left;">
-							<input type="date" name="checkin">
+						<input type="date" name="checkin" min="<?= date('Y-m-d') ?>" required>
 						</td>
 					</tr>
 					<tr>
 						<td style="text-align: left;">Enter check-out date:</td>
 						<td style="text-align: left;">
-							<input type="date" name="checkout">
+						<input type="date" name="checkout" min="<?= date('Y-m-d') ?>" required>
 						</td>
 					</tr>
 				</table>
